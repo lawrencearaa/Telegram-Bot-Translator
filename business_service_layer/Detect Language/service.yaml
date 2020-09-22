@@ -1,0 +1,41 @@
+info:
+  version: "1.0.0"
+  title: "Detect Language"
+paths:
+  /route:
+    post:
+      summary: "Detects the language a text belongs to"
+      consumes:
+        - multipart/form-data
+      produces:
+      - "application/json"
+      parameters:
+      - in: body
+        name: params
+        description: The parameters of the request.
+        schema:
+          $ref: '#/definitions/Params'
+        required: true
+      responses:
+        200:
+          description: "Ok"
+          schema:
+            $ref: "#/definitions/Result"
+        400:
+          description: "Invalid request"
+
+definitions:
+  Params:
+    type: "object"
+    properties:
+      text:
+        description: "Text whose language is to be identiied"
+        type: "string"
+  Result:
+    type: "object"
+    properties:
+      lang:
+        type: "string"
+        description: "Detected language"
+
+

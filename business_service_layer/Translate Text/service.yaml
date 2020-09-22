@@ -1,0 +1,43 @@
+info:
+  version: "1.0.0"
+  title: "Translate Text"
+paths:
+  /route:
+    post:
+      summary: "Translates text from one language to another"
+      consumes:
+        - multipart/form-data
+      produces:
+      - "application/json"
+      parameters:
+      - in: body
+        name: params
+        description: The parameters of the request.
+        schema:
+          $ref: '#/definitions/Params'
+        required: true
+      responses:
+        200:
+          description: "Ok"
+          schema:
+            $ref: "#/definitions/Result"
+        400:
+          description: "Invalid request"
+
+definitions:
+  Params:
+    type: "object"
+    properties:
+      text:
+        description: "Text to be translated"
+        type: "string"
+      dest_lang:
+        description: "Language code of the destination language"
+        type: "string"
+  Result:
+    type: "object"
+    properties:
+      text:
+        type: "string"
+        description: "Translated text"
+

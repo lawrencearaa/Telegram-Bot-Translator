@@ -1,0 +1,33 @@
+info:
+  version: "1.0.0"
+  title: "Language adapter"
+paths:
+  /list:
+    get:
+      summary: "Gets the list of all the languages supported by the Google Translate API"
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "Ok"
+          schema:
+            type: dictionary
+            items:
+              $ref: "#/definitions/Languages"   
+        400:
+          description: "Invalid request"    
+
+
+definitions:
+  Langauges:
+    type: "object"
+    properties:
+      id:
+        description: "ID of the langauge"
+        type: "string"
+      language:
+        description: "Language supported by the Google Translation API"
+        type: "string"
+      code:
+        description: "Language_code of corresponding language"
+        type: "string"

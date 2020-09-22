@@ -1,0 +1,21 @@
+info:
+  version: "1.0.0"
+  title: "Bot Translator"
+paths:
+  /start:
+    get:
+      summary: "Start the telegram bot"
+      responses:
+        200:
+          description: "OK"
+        400:
+          description: "Invalid request"
+
+  /stop:
+    get:
+      summary: "Stop the Telegram bot"
+      responses:
+        200:
+          description: "OK"
+        400:
+          description: "Invalid request"

@@ -1,0 +1,63 @@
+info:
+  version: "1.0.0"
+  title: "Destination Language"
+paths:
+  /language/{user_id}:
+    get:
+      summary: "Gets the langauge_code of the destination language"
+      produces:
+      - "application/json"
+      parameters:
+      - in: path
+        name: user_id
+        description: Contact's user identifier in Telegram
+        type: "number" 
+        required: true
+      responses:
+        200:
+          description: "Ok"
+          schema:
+            type: array
+            items:
+              $ref: "#/definitions/language"
+        400:
+          description: "Invalid request"
+
+  /language:
+    post:
+      summary: "Sends the destination language_code received from the user to the server"
+      consumes:
+        - multipart/form-data
+      produces:
+      - "application/json"
+      parameters:
+      - in: body
+        name: params
+        description: The parameters of the request.
+        schema:
+          $ref: '#/definitions/Params'
+        required: true
+      responses:
+        200:
+          description: "Ok"
+        400:
+          description: "Invalid request!"
+
+definitions:
+  language:
+    type: "object"
+    properties:
+      retreived: 
+        type: "string"
+        description: "Language code of the destination language"
+  Params:
+    type: "object"
+    properties:
+      user_id: 
+        description: "Contact's user identifier in Telegram"
+        type: "number"
+      dest_lang:
+        description: "Language code of the destination language"
+        type: "string"       
+       
+  

@@ -1,0 +1,152 @@
+{
+   "langauges": [
+
+      {
+         "id":"01",
+         "language": "Afrikaans",
+         "code": "af"
+      },
+      {
+         "id":"02",
+         "language": "Irish",
+         "code": "ga"
+      },
+      {
+         "id":"03",
+         "language": "Italian",
+         "code": "it"
+      },
+      {
+         "id":"04",
+         "language": "Arabic",
+         "code": "ar"
+      },
+      {
+         "id":"05",
+         "language": "Japanese",
+         "code": "ja"
+      },
+
+      {
+         "id":"06",
+         "language": "French",
+         "code":  "fr"
+      },
+      {
+         "id":"07",
+         "language": "Spanish",
+         "code": "es"
+      },
+      {
+         "id":"08",
+         "language": "German",
+         "code": "de"
+      },
+      {
+         "id":"09",
+         "language": "Greek",
+         "code": "el"
+      },
+
+      {
+         "id":"10",
+         "language": "Turkish",
+         "code": "tr"
+      },
+      {
+         "id":"11",
+         "language": "Hebrew",
+         "code": "iw"
+      },
+      {
+         "id":"12",
+         "language": "Hindi",
+         "code": "hi"
+      },
+      {
+         "id":"13",
+         "language": "Welsh",
+         "code": "cy"
+      },
+
+      {
+         "id":"14",
+         "language": "Russian",
+         "code": "ru"
+      },
+      {
+         "id":"15",
+         "language": "Serbian",
+         "code": "sr"
+      },
+      {
+         "id":"16",
+         "language": "Norwegian",
+         "code": "no"
+      },
+      {
+         "id":"17",
+         "language": "Chinese Traditional",
+         "code": "zh-TW"
+      },
+
+      {
+         "id":"18",
+         "language": "Chinese Simplified",
+         "code": "zh-CN"
+      },
+      {
+         "id":"19",
+         "language": "Korean",
+         "code": "ko"
+      },
+      {
+         "id":"20",
+         "language": "Latin",
+         "code": "la"
+      },
+      {
+         "id":"21",
+         "language": "Catalan",
+         "code": "ca"
+      },
+
+      {
+         "id":"22",
+         "language": "Bulgarian",
+         "code": "bg"
+      },
+      {
+         "id":"23",
+         "language": "Dutch",
+         "code": "nl"
+      },
+      {
+         "id":"24",
+         "language": "Portuguese",
+         "code": "pt"
+      },
+      {
+         "id":"25",
+         "language": "English",
+         "code":  "en"
+      },
+
+      {
+         "id":"26",
+         "language": "Romanian",
+         "code": "ro"
+      },
+      {
+         "id":"27",
+         "language": "Persian",
+         "code": "fa"
+      },
+      {
+         "id":"28",
+         "language": "Swahili",
+         "code": "sw"
+      }
+  ]
+
+}
