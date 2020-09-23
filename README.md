@@ -17,7 +17,4 @@ The goal of this project is to build a a micro-service architecture that can eff
 A well detailed report of the project that explains how the above architecture functions can be found in the main repository folder. The project also has an API documentation of the different requests made by the micro-services which can be found here, [API Documentation](https://documenter.getpostman.com/view/9110031/TVKBZJqJ)
 
 ### Requirements
-To succesfully run this project, the following requiremnets should be installed in the virtual environment that will be running the code:
-  - Python3
-  - Flask 1.1.2
-  - googletrans 3.0.0
+A text file with all the requirements needed to execute the project is available in the main project folder and each service also has a text file having the dependencies required to run that service.
