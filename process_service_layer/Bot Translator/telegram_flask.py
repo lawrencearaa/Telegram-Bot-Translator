@@ -4,7 +4,7 @@ import requests
 import json
 
 
-bot_token = '1231315957:AAG_sYHCOWxGPKpHxKtmr1iowV8zy2j8Lhs'
+bot_token = '## your telegram bot token'
 
 app = Flask(__name__)
 
